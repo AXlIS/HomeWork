@@ -10,3 +10,4 @@ while a < b:
     a = a * index
     print(f'{days}-й день: ', round(a, 2))
 
+print(f'На {days}-й день спортсмен достигнет результата - не менее {b} км')
