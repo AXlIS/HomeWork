@@ -10,13 +10,12 @@ print(my_list)
 if len(my_list) % 2 == 1:
     last_element = my_list.pop()
 
-print(last_element)
-
 for number, element in enumerate(my_list):
     if number % 2 == 0:
         my_list.insert(number + 2, my_list[number])
         my_list.remove(my_list[number])
 
-my_list.append(last_element)
+if last_element != None:
+    my_list.append(last_element)
 
 print(my_list)
